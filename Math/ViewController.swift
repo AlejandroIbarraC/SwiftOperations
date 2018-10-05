@@ -35,8 +35,8 @@ class ViewController: UIViewController {
     
     // Calcula suma, resta, multiplicacion y division y los muestra en interfaz.
     @IBAction func calcular(_ sender: Any) {
-        let num1:Float = Float(box1.text!)!
-        let num2:Float = Float(box2.text!)!
+        let num1:Float = Float(box1.text!) ?? 0
+        let num2:Float = Float(box2.text!) ?? 0
         
         let mas = (num1 + num2).cleanValue
         let menos = (num1 - num2).cleanValue
