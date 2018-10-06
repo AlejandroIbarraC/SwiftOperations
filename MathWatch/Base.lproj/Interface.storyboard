@@ -41,6 +41,10 @@
                         <outlet property="Calcular" destination="Mlf-Ja-c9u" id="BaB-Hg-zDs"/>
                         <outlet property="Label" destination="EiN-AF-uXs" id="sMa-vs-yPZ"/>
                         <outlet property="Label2" destination="S26-DR-s6z" id="wku-mi-zZM"/>
+                        <outlet property="division" destination="lPo-LX-Bny" id="W8J-4s-qx4"/>
+                        <outlet property="multi" destination="7k0-HU-U0Q" id="GOC-DE-C8P"/>
+                        <outlet property="resta" destination="cnZ-YW-MyL" id="s6k-OZ-Saf"/>
+                        <outlet property="suma" destination="sIo-sG-2yJ" id="ykp-Qv-XYE"/>
                     </connections>
                 </controller>
             </objects>

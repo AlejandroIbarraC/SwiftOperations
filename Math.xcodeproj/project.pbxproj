@@ -21,7 +21,6 @@
 		A9CE71FE216717A9003CC893 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE71FD216717A9003CC893 /* NotificationController.swift */; };
 		A9CE7200216717AA003CC893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE71FF216717AA003CC893 /* Assets.xcassets */; };
 		A9CE7205216717AA003CC893 /* MathWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A9CE71E8216717A7003CC893 /* MathWatch.app */; };
-		A9E742A121682A650054EC6F /* SecondInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E742A021682A650054EC6F /* SecondInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +94,6 @@
 		A9CE71FF216717AA003CC893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9CE7201216717AA003CC893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CE7202216717AA003CC893 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		A9E742A021682A650054EC6F /* SecondInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +184,6 @@
 				A9CE71FF216717AA003CC893 /* Assets.xcassets */,
 				A9CE7201216717AA003CC893 /* Info.plist */,
 				A9CE7202216717AA003CC893 /* PushNotificationPayload.apns */,
-				A9E742A021682A650054EC6F /* SecondInterfaceController.swift */,
 			);
 			path = "MathWatch Extension";
 			sourceTree = "<group>";
@@ -373,7 +370,6 @@
 				A9CE71FE216717A9003CC893 /* NotificationController.swift in Sources */,
 				A9CE71FC216717A9003CC893 /* ExtensionDelegate.swift in Sources */,
 				A9CE71FA216717A9003CC893 /* InterfaceController.swift in Sources */,
-				A9E742A121682A650054EC6F /* SecondInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
