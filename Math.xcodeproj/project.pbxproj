@@ -13,6 +13,15 @@
 		A989E4E42163C67F00DD495F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A989E4E32163C67F00DD495F /* Assets.xcassets */; };
 		A989E4E72163C67F00DD495F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A989E4E52163C67F00DD495F /* LaunchScreen.storyboard */; };
 		A989E4F22163C67F00DD495F /* MathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989E4F12163C67F00DD495F /* MathTests.swift */; };
+		A9CE71EC216717A7003CC893 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CE71EA216717A7003CC893 /* Interface.storyboard */; };
+		A9CE71EE216717A9003CC893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE71ED216717A9003CC893 /* Assets.xcassets */; };
+		A9CE71F5216717A9003CC893 /* MathWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9CE71F4216717A9003CC893 /* MathWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9CE71FA216717A9003CC893 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE71F9216717A9003CC893 /* InterfaceController.swift */; };
+		A9CE71FC216717A9003CC893 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE71FB216717A9003CC893 /* ExtensionDelegate.swift */; };
+		A9CE71FE216717A9003CC893 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CE71FD216717A9003CC893 /* NotificationController.swift */; };
+		A9CE7200216717AA003CC893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CE71FF216717AA003CC893 /* Assets.xcassets */; };
+		A9CE7205216717AA003CC893 /* MathWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A9CE71E8216717A7003CC893 /* MathWatch.app */; };
+		A9E742A121682A650054EC6F /* SecondInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E742A021682A650054EC6F /* SecondInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +32,46 @@
 			remoteGlobalIDString = A989E4D82163C67D00DD495F;
 			remoteInfo = Math;
 		};
+		A9CE71F6216717A9003CC893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A989E4D12163C67D00DD495F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CE71F3216717A9003CC893;
+			remoteInfo = "MathWatch Extension";
+		};
+		A9CE7203216717AA003CC893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A989E4D12163C67D00DD495F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CE71E7216717A7003CC893;
+			remoteInfo = MathWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9CE720B216717AA003CC893 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9CE71F5216717A9003CC893 /* MathWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE720D216717AA003CC893 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A9CE7205216717AA003CC893 /* MathWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A989E4D92163C67E00DD495F /* Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Math.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +84,18 @@
 		A989E4ED2163C67F00DD495F /* MathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A989E4F12163C67F00DD495F /* MathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathTests.swift; sourceTree = "<group>"; };
 		A989E4F32163C67F00DD495F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9CE71E8216717A7003CC893 /* MathWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CE71EB216717A7003CC893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A9CE71ED216717A9003CC893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9CE71EF216717A9003CC893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9CE71F4216717A9003CC893 /* MathWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MathWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CE71F9216717A9003CC893 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A9CE71FB216717A9003CC893 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A9CE71FD216717A9003CC893 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A9CE71FF216717AA003CC893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9CE7201216717AA003CC893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9CE7202216717AA003CC893 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A9E742A021682A650054EC6F /* SecondInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +113,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9CE71F1216717A9003CC893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +128,8 @@
 			children = (
 				A989E4DB2163C67E00DD495F /* Math */,
 				A989E4F02163C67F00DD495F /* MathTests */,
+				A9CE71E9216717A7003CC893 /* MathWatch */,
+				A9CE71F8216717A9003CC893 /* MathWatch Extension */,
 				A989E4DA2163C67E00DD495F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +139,8 @@
 			children = (
 				A989E4D92163C67E00DD495F /* Math.app */,
 				A989E4ED2163C67F00DD495F /* MathTests.xctest */,
+				A9CE71E8216717A7003CC893 /* MathWatch.app */,
+				A9CE71F4216717A9003CC893 /* MathWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +167,30 @@
 			path = MathTests;
 			sourceTree = "<group>";
 		};
+		A9CE71E9216717A7003CC893 /* MathWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE71EA216717A7003CC893 /* Interface.storyboard */,
+				A9CE71ED216717A9003CC893 /* Assets.xcassets */,
+				A9CE71EF216717A9003CC893 /* Info.plist */,
+			);
+			path = MathWatch;
+			sourceTree = "<group>";
+		};
+		A9CE71F8216717A9003CC893 /* MathWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE71F9216717A9003CC893 /* InterfaceController.swift */,
+				A9CE71FB216717A9003CC893 /* ExtensionDelegate.swift */,
+				A9CE71FD216717A9003CC893 /* NotificationController.swift */,
+				A9CE71FF216717AA003CC893 /* Assets.xcassets */,
+				A9CE7201216717AA003CC893 /* Info.plist */,
+				A9CE7202216717AA003CC893 /* PushNotificationPayload.apns */,
+				A9E742A021682A650054EC6F /* SecondInterfaceController.swift */,
+			);
+			path = "MathWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +201,12 @@
 				A989E4D52163C67D00DD495F /* Sources */,
 				A989E4D62163C67D00DD495F /* Frameworks */,
 				A989E4D72163C67D00DD495F /* Resources */,
+				A9CE720D216717AA003CC893 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A9CE7204216717AA003CC893 /* PBXTargetDependency */,
 			);
 			name = Math;
 			productName = Math;
@@ -134,13 +231,47 @@
 			productReference = A989E4ED2163C67F00DD495F /* MathTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A9CE71E7216717A7003CC893 /* MathWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CE720C216717AA003CC893 /* Build configuration list for PBXNativeTarget "MathWatch" */;
+			buildPhases = (
+				A9CE71E6216717A7003CC893 /* Resources */,
+				A9CE720B216717AA003CC893 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9CE71F7216717A9003CC893 /* PBXTargetDependency */,
+			);
+			name = MathWatch;
+			productName = MathWatch;
+			productReference = A9CE71E8216717A7003CC893 /* MathWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A9CE71F3216717A9003CC893 /* MathWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CE720A216717AA003CC893 /* Build configuration list for PBXNativeTarget "MathWatch Extension" */;
+			buildPhases = (
+				A9CE71F0216717A9003CC893 /* Sources */,
+				A9CE71F1216717A9003CC893 /* Frameworks */,
+				A9CE71F2216717A9003CC893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MathWatch Extension";
+			productName = "MathWatch Extension";
+			productReference = A9CE71F4216717A9003CC893 /* MathWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A989E4D12163C67D00DD495F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Alejandro Ibarra";
 				TargetAttributes = {
@@ -150,6 +281,12 @@
 					A989E4EC2163C67F00DD495F = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = A989E4D82163C67D00DD495F;
+					};
+					A9CE71E7216717A7003CC893 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A9CE71F3216717A9003CC893 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -168,6 +305,8 @@
 			targets = (
 				A989E4D82163C67D00DD495F /* Math */,
 				A989E4EC2163C67F00DD495F /* MathTests */,
+				A9CE71E7216717A7003CC893 /* MathWatch */,
+				A9CE71F3216717A9003CC893 /* MathWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +326,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE71E6216717A7003CC893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CE71EE216717A9003CC893 /* Assets.xcassets in Resources */,
+				A9CE71EC216717A7003CC893 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE71F2216717A9003CC893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CE7200216717AA003CC893 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +366,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9CE71F0216717A9003CC893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CE71FE216717A9003CC893 /* NotificationController.swift in Sources */,
+				A9CE71FC216717A9003CC893 /* ExtensionDelegate.swift in Sources */,
+				A9CE71FA216717A9003CC893 /* InterfaceController.swift in Sources */,
+				A9E742A121682A650054EC6F /* SecondInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +384,16 @@
 			isa = PBXTargetDependency;
 			target = A989E4D82163C67D00DD495F /* Math */;
 			targetProxy = A989E4EE2163C67F00DD495F /* PBXContainerItemProxy */;
+		};
+		A9CE71F7216717A9003CC893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CE71F3216717A9003CC893 /* MathWatch Extension */;
+			targetProxy = A9CE71F6216717A9003CC893 /* PBXContainerItemProxy */;
+		};
+		A9CE7204216717AA003CC893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CE71E7216717A7003CC893 /* MathWatch */;
+			targetProxy = A9CE7203216717AA003CC893 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -235,6 +412,14 @@
 				A989E4E62163C67F00DD495F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9CE71EA216717A7003CC893 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CE71EB216717A7003CC893 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,6 +617,88 @@
 			};
 			name = Release;
 		};
+		A9CE7206216717AA003CC893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UU452CNJ4;
+				IBSC_MODULE = MathWatch_Extension;
+				INFOPLIST_FILE = MathWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tec.Math.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		A9CE7207216717AA003CC893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UU452CNJ4;
+				IBSC_MODULE = MathWatch_Extension;
+				INFOPLIST_FILE = MathWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tec.Math.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		A9CE7208216717AA003CC893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UU452CNJ4;
+				INFOPLIST_FILE = "MathWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tec.Math.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		A9CE7209216717AA003CC893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UU452CNJ4;
+				INFOPLIST_FILE = "MathWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tec.Math.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -458,6 +725,24 @@
 			buildConfigurations = (
 				A989E4FA2163C67F00DD495F /* Debug */,
 				A989E4FB2163C67F00DD495F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CE720A216717AA003CC893 /* Build configuration list for PBXNativeTarget "MathWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CE7208216717AA003CC893 /* Debug */,
+				A9CE7209216717AA003CC893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CE720C216717AA003CC893 /* Build configuration list for PBXNativeTarget "MathWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CE7206216717AA003CC893 /* Debug */,
+				A9CE7207216717AA003CC893 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

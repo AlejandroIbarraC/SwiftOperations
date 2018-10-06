@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.23.1" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.16.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.12"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MathWatch" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Número 1" id="Ek9-pO-mQp">
+                            <connections>
+                                <action selector="numero1" destination="AgC-eL-Hgc" id="CGU-Ct-vO6"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="0" id="EiN-AF-uXs"/>
+                        <button width="1" alignment="left" title="Número 2" id="dY3-kL-hgS">
+                            <connections>
+                                <action selector="numero2" destination="AgC-eL-Hgc" id="mWM-1Z-8Sy"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="0" id="S26-DR-s6z"/>
+                        <button width="1" alignment="left" title="Calcular" id="Mlf-Ja-c9u">
+                            <connections>
+                                <action selector="calcular" destination="AgC-eL-Hgc" id="fBn-OT-tvh"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="Hs6-ji-Feg"/>
+                        <label alignment="left" text="Resultados: " id="gJF-cY-jbF"/>
+                        <label alignment="left" text="Suma: " id="sIo-sG-2yJ" userLabel="Suma:"/>
+                        <label alignment="left" text="Resta: " id="cnZ-YW-MyL"/>
+                        <label alignment="left" text="Multiplicación: " id="7k0-HU-U0Q"/>
+                        <label alignment="left" text="División:" id="lPo-LX-Bny"/>
+                    </items>
+                    <connections>
+                        <outlet property="Calcular" destination="Mlf-Ja-c9u" id="BaB-Hg-zDs"/>
+                        <outlet property="Label" destination="EiN-AF-uXs" id="sMa-vs-yPZ"/>
+                        <outlet property="Label2" destination="S26-DR-s6z" id="wku-mi-zZM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="214.46153846153848" y="344.35897435897436"/>
+        </scene>
+    </scenes>
+</document>
